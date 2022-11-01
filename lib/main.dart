@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
@@ -120,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
               return Transform.translate(
                 offset: Offset(animation?.value ?? 0, 0),
                 child: Image.asset(
-                  'capivara.png',
+                  'assets/capivara.png',
                   width: 200,
                   height: 200,
                 ),
